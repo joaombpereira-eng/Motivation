@@ -26,6 +26,15 @@ class SplashActivity : AppCompatActivity() {
             Log.v("Motivation", "${binding.editName.text}")
             handleSave()
         }
+
+        verifyName()
+    }
+
+    private fun verifyName() {
+        val name = mSecurityPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        if (name != "")
+            startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 
     private fun handleSave() {
@@ -34,6 +43,7 @@ class SplashActivity : AppCompatActivity() {
         if (name != "") {
             mSecurityPreferences.storeString(MotivationConstants.KEY.PERSON_NAME, name)
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         } else
             Toast.makeText(this, "Insira o seu nome!", Toast.LENGTH_SHORT).show()
     }
