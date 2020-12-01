@@ -19,7 +19,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:src="@drawable/ic_all"
-            android:tint="@color/white" />
+            android:tint="@color/white"/>
 
         <ImageView
             android:id="@+id/imageHappy"
@@ -28,7 +28,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:src="@drawable/ic_happy"
-            android:tint="@color/white" />
+            android:tint="@color/white"/>
 
         <ImageView
             android:id="@+id/imageMorning"
@@ -37,7 +37,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:src="@drawable/ic_sun"
-            android:tint="@color/white" />
+            android:tint="@color/white"/>
 
     </LinearLayout>
 
@@ -58,7 +58,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="32dp"
-        android:text="Hello World!"
+        android:text="Frase"
         android:textSize="22sp" />
 
     <View
